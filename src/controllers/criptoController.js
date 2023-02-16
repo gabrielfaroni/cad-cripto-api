@@ -1,15 +1,19 @@
-exports.adiconaMoeda = (req, res) => {
 
-}
+const service = require('../services/criptoService')
 
-exports.alteraMoeda = (req, res) => {
+//exports.adiconarMoeda = (req, res) => {
 
-}
 
-exports.obtemMoeda = (req, res) => {
 
-}
+//exports.alterarMoeda = (req, res) => {
 
-exports.deletaMoeda = (req, res) => {
+
+
+exports.obterMoeda = (req, res) => {
     
+    res.status(201).send(service.obterMoedaService())
+
 }
+
+//exports.deletarMoeda = (req, res) => {
+    
