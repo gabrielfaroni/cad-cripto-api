@@ -1,11 +1,9 @@
-const repository = require('../repositories/criptoRepository')
+const repository = require("../repositories/criptoRepository");
 
 exports.obterMoedasService = () => {
-
-    return repository.obterMoedasRepository();
-}
+  return repository.obterMoedasRepository();
+};
 
 exports.obterMoedaPeloIdService = (id) => {
-
-    return repository.obterMoedaPeloIdRepository(id);
-}
+  return repository.obterMoedaPeloIdRepository(id);
+};
